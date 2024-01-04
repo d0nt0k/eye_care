@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome, Dr. [Doctor Name]</h1>
+    </header>
+    <section id="prescription-section">
+        <h2>Prescription</h2>
+        <form action="store_prescription.php" method="post">
+            <label for="patientName">Patient Name:</label>
+            <input type="text" id="patientName" name="patientName" required>
+            <label for="medication">Medication:</label>
+            <textarea id="medication" name="medication" rows="4" required></textarea>
+            <button type="submit">Prescribe</button>
+        </form>
+    </section>
+</body>
+</html>

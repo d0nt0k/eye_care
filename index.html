@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor-Patient Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <script src="authenticate.php"></script>
+    <script src="store_presciption.php"></script>
+</head>
+<body>
+    <header>
+        <h1>Doctor-Patient Portal</h1>
+    </header>
+    <section id="login-section">
+        <div id="doctor-login">
+            <h2>Doctor Login</h2>
+            <form action="doctor_dashboard.html" method="post">
+                <label for="docUsername">Username:</label>
+                <input type="text" id="docUsername" name="docUsername" required>
+                <label for="docPassword">Password:</label>
+                <input type="password" id="docPassword" name="docPassword" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div id="patient-login">
+            <h2>Patient Login</h2>
+            <form action="patient_dashboard.html" method="post">
+                <label for="patUsername">Username:</label>
+                <input type="text" id="patUsername" name="patUsername" required>
+                <label for="patPassword">Password:</label>
+                <input type="password" id="patPassword" name="patPassword" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
